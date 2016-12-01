@@ -22,10 +22,11 @@ package main
 import (
 	"github.com/IrekRomaniuk/snap-plugin-collector-rand/rand"
 	"github.com/intelsdi-x/snap-plugin-lib-go/v1/plugin"
+	//"github.com/intelsdi-x/snap/control/plugin"
 )
 
 const (
-	pluginName    = "test-rand-collector"
+	pluginName    = "snap-plugin-collector-rand"
 	pluginVersion = 1
 )
 
