@@ -12,6 +12,7 @@ workflow:
     config:
     process:
       -
+        plugin_name: "passthru"
         process: null
         publish:
           -
