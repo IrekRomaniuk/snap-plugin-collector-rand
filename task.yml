@@ -1,0 +1,20 @@
+version: 1
+schedule:
+  type: "simple"
+  interval: "5s"
+max-failures: 10
+workflow:
+  collect:
+    metrics:
+      /random/float: {}
+      /random/integer: {}
+      /random/string: {}
+    config:
+    process:
+      -
+        process: null
+        publish:
+          -
+            plugin_name: "file"
+            config:
+              file: "/tmp/rand.log"
